@@ -59,7 +59,7 @@ public class Controlador {
         return datos.generarNumeroPedido();
     }
 
-    // Método adicional para obtener la lista de artículos
+    // Método adicional para obtener la lista de artículoss
     public java.util.List<Articulo> getArticulos() {
         return datos.getArticulos();
     }
