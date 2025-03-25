@@ -1,0 +1,17 @@
+Al compilar un test automáticamente se crea la carpeta "bin", la cual solo sirve para cuando se ejecuten los mismos. Una vez ejecutados se puede borrar la carpeta "bin" sin problema.
+
+
+Comandos para compilar un Test u otro
+
+Test Controlador (Se encarga de buscar un artículo por su código. Si no lo encuentra, lanza una excepción.
+Esto valida una regla de negocio fundamental: no se pueden realizar operaciones con artículos inexistentes.):
+	javac -cp "libs/junit-platform-console-standalone-1.10.2.jar;src" -d bin test/codecrafters/controlador/ControladorTest.java
+
+o
+
+Test EliminarPedido (Elimina un pedido si existe y si aún no ha sido enviado. Devuelve true si se elimina correctamente y false si no.
+Esta lógica garantiza que el sistema no permita eliminar pedidos inexistentes o ya procesados, manteniendo la coherencia del negocio.):
+	javac -cp "libs/junit-platform-console-standalone-1.10.2.jar;src" -d bin test/codecrafters/controlador/EliminarPedidoTest.java
+
+Ejecutar Test Compilado:
+	java -jar libs/junit-platform-console-standalone-1.10.2.jar --class-path bin --scan-class-path
