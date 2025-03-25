@@ -61,7 +61,7 @@ public class Vista {
                     this.mostrarPedidosEnviados();
                     break;
                 case 0:
-                    System.out.println("Saliendo del sistema...");
+                    System.out.println("Sayonara...");
                     break;
                 default:
                     System.out.println("Opción no válida, intente nuevamente.");

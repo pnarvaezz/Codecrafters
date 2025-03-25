@@ -91,4 +91,11 @@ public class Datos {
     public int generarNumeroPedido() {
         return pedidos.size() + 1;
     }
+
+    // Metodo genérico añadido para mostrar cualquier lista, no vamos a hacer uso de él porque no lo creemos necesario por el momento
+    public <T> void mostrarListaGenerica(List<T> lista) {
+        for (T elemento : lista) {
+            System.out.println(elemento);
+        }
+    }
 }
